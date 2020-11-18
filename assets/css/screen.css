@@ -624,7 +624,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin: 0 0 40px;
     padding: 0 20px 40px;
     min-height: 220px;
-    border-bottom: 1px solid color-mod(var(--lightgrey) l(+12%));
     background-size: cover;
 }
 
@@ -638,6 +637,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .post-card-image {
     width: 100%;
     height: 200px;
+    border-radius: 7px;
     background: var(--lightgrey) no-repeat center center;
 
     object-fit: cover;
@@ -669,7 +669,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin: 0 0 0.2em;
     color: var(--blue);
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: bold;
     letter-spacing: 0.2px;
     text-transform: uppercase;
 }
@@ -678,6 +678,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin: 0 0 0.4em;
     line-height: 1.15em;
     transition: color 0.2s ease-in-out;
+    line-height: 3.2rem;
+    font-family: 'Sukhumvit Set', 'Kanit', sans-serif;
 }
 
 .no-image .post-card-title {
@@ -698,6 +700,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .post-card-excerpt p {
     margin-bottom: 1em;
+    font-family: 'Sarabun', sans-serif;
 }
 
 .post-card-meta {
@@ -781,7 +784,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex: 1 1 50%;
     display: flex;
     flex-direction: column;
-    margin: 2px 0 0 6px;
     color: color-mod(var(--midgrey) l(+10%));
     font-size: 1.2rem;
     line-height: 1.4em;
