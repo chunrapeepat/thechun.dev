@@ -1039,6 +1039,34 @@ make sure this only happens on large viewports / desktop-ish devices.
     height: auto;
 }
 
+.post-footer {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 170px 6vw;
+    background: #fff;
+    margin-top: -50px;
+}
+@media (max-width: 1170px) {
+    .post-footer {
+        margin-top: 0;
+        padding: 0 11vw;
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 800px) {
+    .post-footer {
+        padding: 0 5vw;
+        font-size: 1.8rem;
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 500px) {
+    .post-footer {
+        padding: 0;
+        padding-bottom: 50px;
+    }
+}
+
 .post-full-content {
     position: relative;
     margin: 0 auto;
