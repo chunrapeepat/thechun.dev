@@ -90,6 +90,7 @@ into the {body} of the default.hbs template --}}
 {{!-- Links to Previous/Next posts --}}
 <aside class="read-next outer">
     <div class="inner">
+        <h2 style="color: #eee; margin-bottom: -30px; padding-top: 20px" class="heading">เรื่องราวอื่นๆที่น่าสนใจ</h2>
         <div class="read-next-feed">
             {{#if primary_tag}}
             {{#get "posts" filter="tags:{{primary_tag.slug}}+id:-{{id}}" limit="3" as |related_posts|}}
