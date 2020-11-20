@@ -21,21 +21,24 @@ into the {body} of the default.hbs template --}}
     </div>
 </header>
 
-{{!-- TODO: Feature Post and Facebook Page --}}
-
 {{!-- The main content area --}}
 <main id="site-main" class="site-main outer">
     <div class="inner posts">
-        <h2 class="heading">บทความล่าสุด</h2>
-        <div class="post-feed">
+        <div class="post-feed" style="margin-top: 30px">
+            {{#get "posts" filter="featured:true" limit="all"}}
+                {{#if posts}}
+                    {{#foreach posts}}
+                        {{> "post-card" display-featured=true }}
+                    {{/foreach}}
+                {{/if}}
+            {{/get}}
             {{#foreach posts}}
-
-                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                {{> "post-card"}}
-
+                {{^if featured}}
+                    {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+                    {{> "post-card"}}
+                {{/if}}
             {{/foreach}}
         </div>
-
     </div>
 </main>
 
