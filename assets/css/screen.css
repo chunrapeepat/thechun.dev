@@ -50,12 +50,40 @@ body {
 
 .heading {
     font-family: 'Sukhumvit Set', 'Kanit', sans-serif;
-    font-size: 2.6rem;
-    font-weight: bold;
 }
 .font-awesome-icon {
     color: white;
     font-size: 2rem;
+}
+.header-profile-img {
+    max-width: 220px;
+    border-radius: 50%;
+    border: 7px solid rgba(255, 255, 255, 0.15);
+}
+.header-welcome-message {
+    color: white;
+    font-weight: 300;
+    margin: 7px 0;
+}
+.header-welcome-message > span {
+    font-weight: bold;
+}
+.welcome-section {
+    min-height: 50vh;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 680px) {
+    .welcome-section {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        padding: 50px 25px;
+    }
+    .header-profile-img {
+        margin-bottom: 25px;
+    }
 }
 
 
@@ -135,7 +163,6 @@ body {
     left: 0;
     z-index: 10;
     display: block;
-    background: rgba(0,0,0,0.18);
 }
 
 .site-header-background:after {
@@ -158,13 +185,8 @@ body {
 
 .site-header-content {
     z-index: 100;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 6vw 3vw;
-    min-height: 200px;
-    max-height: 340px;
+    min-height: 340px;
+    max-height: 500px;
 }
 
 .site-title {
@@ -187,7 +209,8 @@ body {
     font-size: 2.1rem;
     line-height: 1.4em;
     font-weight: 400;
-    opacity: 0.8;
+    opacity: 0.9;
+    font-family: 'Sukhumvit Set', 'Kanit', sans-serif;
 }
 
 /* 4.1 Home header
@@ -209,13 +232,6 @@ body {
     font-size: 5.5rem;
     text-align: center;
 }
-
-.site-home-header .site-description {
-    font-size: 2.2rem;
-    font-weight: 300;
-    text-align: center;
-}
-
 
 /* 4.2 Archive header (tag and author post lists)
 /* ---------------------------------------------------------- */
