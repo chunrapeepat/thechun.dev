@@ -21,11 +21,9 @@ production stylesheet in assets/built/screen.css
 8.  Author Template
 9.  Error Template
 10. Subscribe Overlay
-11. Site Footer
-12. Dark Mode
+11. Sie Footer
 
 */
-
 
 /* 1. Global - Set up the things
 /* ---------------------------------------------------------- */
@@ -48,6 +46,16 @@ body {
     visibility: hidden;
     position: absolute;
     text-indent: -9999px;
+}
+
+.heading {
+    font-family: 'Sukhumvit Set', 'Kanit', sans-serif;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+.font-awesome-icon {
+    color: white;
+    font-size: 2rem;
 }
 
 
@@ -329,9 +337,9 @@ body {
     margin-right: 10px;
     padding: 10px 0 80px;
     font-weight: 500;
-    letter-spacing: 0.2px;
-    text-transform: uppercase;
     white-space: nowrap;
+    font-family: 'Sukhumvit Set', 'Kanit', sans-serif;
+    font-size: 16px;
 
     -ms-overflow-scrolling: touch;
 }
@@ -371,10 +379,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     width: auto;
     height: 21px;
-}
-
-.site-home-header .site-nav-logo {
-    display: none;
 }
 
 .site-nav-content {
@@ -498,7 +502,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .social-link {
     display: inline-block;
     margin: 0;
-    padding: 10px;
+    padding: 5px;
     opacity: 0.8;
 }
 
@@ -2826,7 +2830,7 @@ Usage (In Ghost editor):
 .site-footer {
     position: relative;
     padding-top: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     color: #fff;
     background: color-mod(var(--darkgrey) l(-5%));
 }

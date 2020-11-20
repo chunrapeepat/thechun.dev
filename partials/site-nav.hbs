@@ -22,15 +22,17 @@
         {{else}}
             <div class="social-links">
                 {{#if @site.facebook}}
-                    <a class="social-link social-link-fb" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
+                    <a class="social-link font-awesome-icon" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">
+                        <li class="fa fa-facebook-square"></li>
+                    </a>
                 {{/if}}
                 {{#if @site.twitter}}
                     <a class="social-link social-link-tw" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
                 {{/if}}
             </div>
-            {{#unless @labs.members}}
-                <a class="rss-button" href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
-            {{/unless}}
+            <a class="social-link font-awesome-icon" href="https://www.instagram.com/chunza2542/" title="Instagram" target="_blank" rel="noopener">
+                <li class="fa fa-instagram"></li>
+            </a>
         {{/if}}
 
         {{#if @labs.members}}
